@@ -1,79 +1,206 @@
 	body 
-					{background-color: white;}
+					{background-color: white;
+
+					 	}
+
+/*#header	{ background-color: #E4E4E4;
+		position: absolute;
+		position: fixed;
+	   width: 1800px;
+	   height: 30px;
+	   left: 0px;
+	   right: 0px;
+	   border-style: "solid";
+	   border-width: 2px;
+	   border-color: black;
+	   border-style: solid;
+	   border-left: solid;
+	   text-align: left;
+	   font-family: Ariel;
+}*/
 
 #background_image  {background-image:url("sweetpotatos_edt.jpg");
 					position: absolute;
+					position: fixed;
 					background-repeat: no-repeat;
 					background-position: center;
 					width: 100%;
-					height: 100%;
+					height: 30%;
 
 					}
 
 
 
+
+
+
+				
 .container			{position: absolute;
-					width:  100%;
-					height: 100%;
-					text-align: center;}
-
-/*#grocery {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 1440px; 
-  height: 900px;*/
-}
-#grocery { 
-  position: absolute;
-  width: 100%;
-  height: 100%; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 100%;
-  min-height: 100%;}
-
-
-
-				/*min-height: 100%;
-  				min-width: 1024px;
-  				width: 100%;
-  				height: auto;
-  				position: fixed;
-  				top: 0;
-  				left: 0;
-
-				 /* background-repeat:no-repeat;
-    			 background-attachment:fixed;
-    			background-position: center bottom;
-    			/*position:absolute;
-    			height:610px;
-    			width: ?px;*/
+					width:  1500px;
+					height: 800px;
+					
+					text-align: center
    				
 
 
+}
 
-div.header	{ background-color: #A5E6B4;
-	   position: absolute;
-	   width: 100%;
-	   height: 10%;
-	   left: 0px;
-	   right: 0px;
+	 
+
+
+#side_bar {background-color: #5B5B5B;
+		  position: absolute;
+		  position: fixed;
+		  width: 300px;
+	   height: 289px;
 	   border-style: "solid";
-	   border-width: 10px;
+	   border-width: 2px;
 	   border-color: black;
 	   border-style: solid;
-	   border-radius: 50px;
+	   margin-top: 0px;
+	   margin-left: 1510px;
+
+	}
+
+#links {background-color: #5B5B5B;
+		  float: left;
+		  position: fixed;
+		  width: 310px;
+	   height: 289px;
+	   border-style: "solid";
+	   border-width: 2px;
+	   border-color: black;
+	   border-style: solid;
+	   margin-top: 0px;
+	   margin-right: 100px;
+	   color: white;
 	   text-align: center;
-	   font-family: Ariel;
+	   text-transform: uppercase;
+		  }
+
+#links h3 {}
+
+#links a {
+	position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+    font: normal 15px arial;
+    padding: 5px;
+
+}
+
+#links a:hover {color: black;
+
+}
+
+#locator_container {position: relative;
+					width: 500px;
+					height: 500px;
+					margin-top: 300px;
+					margin-left: 500px;
+					text-align: right;
+				}
+
+
+
+#locator_info  { background-color: white;
+		float: left;
+	   width: 800px;
+	   height: 50px;
+	   border-style: "solid";
+	   border-width: 2px;
+	   border-color: none;
+	   border-style: none;
+	   margin-top: 20%;
+	   margin-left: 5%;
+	   text-align: left;
+	   color: #3a3a3a;
+	   display: inline;
+	   border-radius: 50px 3px 3px 50px;
 	 	}
 
-div.address  { background-color: black;
-		position: absolute;
-	   width: 500px;
+#search { 
+		padding: 5px 9px;
+		 height: 50px;
+		 width: 700px;
+		 border: 1px solid black;
+		 font: normal 18px arial;
+		 background: #f1f1f1;
+		 border-radius: 50px 50px 50px 50px; 
+		}
+
+#submit  {background-color: #6cbb6b;
+		  background-image: linear-gradient(#95d788, #6cbb6b);
+		  border-radius: 3px 50px 50px 3px;
+		  border-width: 15px;
+		  border-style: solid;
+		  border-color: #7eba7c;
+
+		}
+.grocery_checklist  { background-color: white;
+	   float: right;
+	   width: 15px;
+	   height: 15px;
+	   border-style: "solid";
+	   border-width: 5px;
+	   border-color: black;
+	   border-style: solid;
+	   margin-top: 40px;
+	   margin-left: 80px;
+	   display: inline block;
+
+	}
+
+#coconut  	{background-image:url("coconut.jpg");
+			 position: absolute;
+			 width: 30px;
+			 height: 30px;
+			 margin-top: 90px;
+			 margin-left: 260px;}
+
+#coconut .text  { position: absolute;
+				  visibility: hidden;
+				  margin-top: 35px;
+				   } 
+
+#coconut:hover .text {visibility: visible; }
+
+#carrot		{background-image: url("carrot.jpeg");
+			 position: absolute;
+			 width: 30px;
+			 height: 30px;
+			 margin-top: 90px;
+			 margin-left: 360px;
+
+}
+
+#carrot .text {position: absolute;
+				visibility: hidden;
+				margin-top: 35px;
+
+			}
+
+#carrot:hover .text	{visibility: visible;}
+#results	{ background-color: #FFFFFF;
+	    float: right;
+	  	width: 1000px;
+	   height: 100px;
+	   margin-top: 75px;
+	   border-style: "solid";
+	   border-width: 2px;
+	   border-color: black;
+	   border-style: solid;
+	   border-left: 10px;
+	   border-right: 50px;
+	   border-bottom: none;
+	   text-align: left;
+	   font: normal 20px ariel;
+	 	}
+
+
+
+.address_finder { background-color: white;		   position: absolute;
+	   	   width: 1000px;
 	   height: 50px;
 	   border-style: "solid";
 	   border-width: 10px;
@@ -82,76 +209,22 @@ div.address  { background-color: black;
 	   margin-top: 20%;
 	   margin-left: 35%;
 	   text-align: center;
-	   color: white;
+	   color: black;
 	   border-radius: 50px;
 	 	}
 
-div.address:hover {color:white;} /*this does not work*/
 
-div.city  { background-color: black;
-	   position: absolute;
-	   width: 500px;
-	   height: 50px;
+#footer	{ background-color: #E4E4E4;
+	   width: 1800px;
+	   height: 60px;
+	   left: 0px;
+	   right: 0px;
+	   margin-top: 101px;
 	   border-style: "solid";
-	   border-width: 10px;
+	   border-width: 2px;
 	   border-color: black;
 	   border-style: solid;
-	   margin-top: 25%;
-	   margin-left: 35%;
-	   text-align: center;
-	   color: white;
-	   border-radius: 50px;
-	}
-
-div.zipcode  { background-color: black;
-	   position: absolute;
-	   width: 500px;
-	   height: 50px;
-	   border-style: "solid";
-	   border-width: 10px;
-	   border-color: black;
-	   border-style: solid;
-	   margin-top: 30%;
-	   margin-left: 35%;
-	   text-align: center;
-	   color: white;
-	   border-radius: 50px;
-	 }
-
-
-div.vegetables  { background-color: white;
-	   position: absolute;
-	   width: 15px;
-	   height: 15px;
-	   border-style: "solid";
-	   border-width: 5px;
-	   border-color: black;
-	   border-style: solid;
-	   margin-top: 35%;
-	   margin-left: 37%;
-	 }
-
-
-	div.fruits  { background-color: white;
-		position:absolute;
-	   width: 15px;
-	   height: 15px;
-	   border-style: "solid";
-	   border-width: 5px;
-	   border-color: black;
-	   border-style: solid;
-	   margin-top: 35%;
-	   margin-left: 48%;
-	 }
-
-	 div.meat  { background-color: white;
-		position:absolute;
-	   width: 15px;
-	   height: 15px;
-	   border-style: "solid";
-	   border-width: 5px;
-	   border-color: black;
-	   border-style: solid;
-	   margin-top: 35%;
-	   margin-left: 60%;
-	 }
+	   border-left: solid;
+	   text-align: left;
+	   font-family: Ariel;
+}

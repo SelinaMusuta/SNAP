@@ -5,10 +5,22 @@ from flask import render_template
 
 @app.route('/')
 def index():
-	return render_template('SNAP.html')
+	title = "Home"
+	return render_template('SNAP.html',  title = title)
 
-@app.route('/addresses')
+@app.route('/EBT_Spots')
 def addresses():
-	return render_template('addresses.html')
+	title = "EBT Spots"
+	return render_template('addresses.html', title = title)
+
+@app.route('/map_view')
+def map_view():
+	title = "Map View"
+	return render_template('map.html', title = title)
+
+@app.route('/EBT_Calculate')
+def calculator():
+	title = "Calculator"
+	return render_template('calculator.html', title = title)
 
 

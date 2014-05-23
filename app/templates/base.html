@@ -1,0 +1,41 @@
+<!--base.html-->
+
+<html>
+
+<head>
+
+<title>Accepted-Near-You ~ {{title}}</title>
+
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='SNAP.css')}}">
+
+</head>
+
+
+<body>
+<div class='container'>
+<div id='background_image'></div>
+
+<div id= 'links'>
+
+<a href="{{ url_for('index')}}"><h3>Home</h3></a>
+
+<a href="{{ url_for('addresses')}}"><h3>EBT Spots</h3></a>
+
+<a href="{{ url_for('map_view')}}"><h3>Map View</h3></a>
+
+<a href="{{ url_for('calculator')}}"><h3>Calculate Your EBT</h3></a>
+
+</div>
+
+<div id='side_bar'></div>
+
+
+
+{% block content %}
+
+{% endblock %}
+
+</div>
+</body>
+
+</html>

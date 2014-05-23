@@ -1,10 +1,11 @@
-<html>
+{% extends "base.html" %}
+{% block content %}
+
+<!--<html>
 
 <head>
-
-	<title>SNAP</title>
-
 	
+	<title>Accepted-Near-You</title>
 
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='SNAP.css')}}">
 
@@ -12,48 +13,69 @@
 
 </head>
 
-
 <body>
 
 <div class='container'>
-<div id='background_image'></div>
+<div id='background_image'></div>-->
 
-<div class='header'>
-	<h1>SNAP Map</h1>
+<!--<div id='header'>
+	<h1>Accepted Near You</h1>
+
+	
+</div>-->
+
+<!--<div id= 'links'>
+
+<a href="{{ url_for('addresses')}}"><h2>EBT Spots</h2></a>
+
+<a href="{{ url_for('map_view')}}"><h2>Map View</h2></a>
+
+<a href="{{ url_for('calculator')}}"><h2>Calculate Your EBT</h2></a>
 
 </div>
 
+<div id='side_bar'></div>-->
 
-	<div class='address'>
+<div id='locator_container'>
 
-		<h3>address</h3>
+<form id='locator_info'>
 
-		</div>
+	<input id="search" type="text" placeholder="city and state or zip-code or street address">
 
-	<div class='city'>
+	<input id="submit" type="submit" value="Search">
+
+</form>
+
+
+	<h4>Please enter a location.</h4>
+	<h5>We'll show you the nearest store that accepts EBT</h5>
+
+	<!--<div class='locator_info'>
 
 		<h3>city</h3>
 
 		</div>
 
-	<div class='zipcode'>
+	<div class='locator_info'>
 
-		<h3>zipcode</h3>
-
-		</div>
-
-
-
-	
-
-	<!--<div class='foods' style='display:inline'>-->
-
-	<div class='vegetables'></div>
-	<div class='fruits'></div>
-	<div class='meat'></div>
+		<h3>zipcode</h3>-->
 
 		
 
+	<div class='grocery_checklist'></div>
+	<div class='grocery_checklist'></div>
+	<div class='grocery_checklist'></div>
+
+	<div id='coconut'><p class="text">fruits</p></div>
+
+	<div id='carrot'><p class="text">vegetables</p></div>
+
+	<div id='results'>Search Results:</div>
+
 </div>
 
-</body>
+
+
+<div id='footer'></div>
+
+{% endblock %}
