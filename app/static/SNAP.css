@@ -93,6 +93,14 @@
 
 }
 
+h4		{float: center;
+		 font: normal 20px arial;
+		 font-weight: bold;}
+
+h5		{padding: 0px;
+		 font: normal 15px arial;
+		 font-weight: bold;}
+
 #locator_container {position: relative;
 					width: 500px;
 					height: 500px;
